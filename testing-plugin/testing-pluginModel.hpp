@@ -7,12 +7,12 @@
 namespace Example
 {
 
-class testing-plugin
+class testing_plugin
 {
 public:
-  halp_meta(name, "My Avendish Gain")
+  halp_meta(name, "Testing Plugin")
   halp_meta(category, "Audio")
-  halp_meta(c_name, "my_gain")
+  halp_meta(c_name, "testing_plugin")
   halp_meta(uuid, "62004a80-ed0d-473a-84b5-b8d191a0a8b0")
 
   // Define inputs and outputs ports.

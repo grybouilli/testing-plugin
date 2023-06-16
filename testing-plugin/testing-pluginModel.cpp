@@ -2,7 +2,7 @@
 
 namespace Example
 {
-void testing-plugin::operator()(halp::tick t)
+void testing_plugin::operator()(halp::tick t)
 {
   // Process the input buffer
   for(int i = 0; i < inputs.audio.channels; i++)

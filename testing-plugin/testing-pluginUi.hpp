@@ -4,7 +4,7 @@
 
 namespace Example
 {
-struct testing-plugin::ui
+struct testing_plugin::ui
 {
   using enum halp::colors;
   using enum halp::layouts;

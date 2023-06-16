@@ -1,0 +1,8 @@
+# ninja log v5
+0	614	1686907322254934225	CMakeFiles/score_addon_testing-plugin.dir/testing-plugin/testing-pluginModel.cpp.o	9d95092669e9a236
+2	7610	1686907347872628970	CMakeFiles/score_addon_testing-plugin.dir/my_gain_avnd.cpp.o	50f644722709caed
+4	6195	1686907398107030400	CMakeFiles/score_addon_testing-plugin.dir/score_addon_testing-plugin.cpp.o	b34b669c6c9eb95f
+6195	6238	1686907398166029697	plugins/libscore_addon_testing-plugin.so	ce0931d0c938a9f3
+3	536	1686907591532725594	CMakeFiles/score_addon_testing-plugin.dir/testing-plugin/testing-pluginModel.cpp.o	9d95092669e9a236
+4	7216	1686907598193646224	CMakeFiles/score_addon_testing-plugin.dir/my_gain_avnd.cpp.o	50f644722709caed
+7216	7260	1686907598260645426	plugins/libscore_addon_testing-plugin.so	ce0931d0c938a9f3
