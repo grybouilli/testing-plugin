@@ -39,3 +39,5 @@ Makefile
 
 .github
 .clang-format
+
+testing-plugin-build-release

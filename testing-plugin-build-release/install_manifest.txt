@@ -1,2 +1,0 @@
-/home/grybouilli/Documents/ossia/score/packages/testing-plugin/./libscore_addon_testing-plugin.so
-/home/grybouilli/Documents/ossia/score/packages/testing-plugin/./localaddon.json
