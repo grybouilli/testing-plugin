@@ -8,6 +8,12 @@ include(ScoreAvndHelper)
 
 project(score_addon_testing-plugin LANGUAGES CXX)
 
+configure_file("models/traced-lin-pred.pt" "build/models" COPYONLY)
+
+#find_package(Torch REQUIRED)
+
+#target_link_libraries(my_gain "${TORCH_LIBRARIES}")
+
 avnd_score_plugin_init(
   BASE_TARGET score_addon_testing-plugin
 )
