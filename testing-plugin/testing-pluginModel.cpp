@@ -1,12 +1,13 @@
 #include "testing-plugin.hpp"
+// #include <torch/script.h>
 
 namespace Example
 {
     void testing_plugin::operator()(halp::tick t)
     {
         // in and out modifiers
-        auto * in = &inputs.input;
-        auto * out = &outputs.output;
+        auto * in = &inputs.in;
+        auto * out = &outputs.out;
 
         if(module_loaded)
         {
@@ -27,21 +28,5 @@ namespace Example
         }
     }
 
-    bool testing_plugin::load_model(std::string filename)
-    {
-        try
-        {
-            // Deserialize the Scriptmodel from a file using torch::jit::load().
-            model = torch::jit::load(filename);
-        }
-        catch (const c10::Error &e)
-        {
-            std::cerr << "error loading the model : " << filename << "\n";
-            return false;
-        }
-
-        std::cout << "Module : " << filename << "loaded\n";
-
-        return true;
-    }
+    
 }
