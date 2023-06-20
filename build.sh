@@ -11,5 +11,5 @@ cmake -S . \
         -DCMAKE_MODULE_PATH="$SCORE_SDK/usr/lib/cmake/score" \
         -DSCORE_SDK="$SCORE_SDK/usr" \
         -DOSSIA_SDK="$OSSIA_SDK" \
-        -DCMAKE_INSTALL_PREFIX="/home/grybouilli/Documents/ossia/score/packages/my_plugin" \
+        -DCMAKE_INSTALL_PREFIX="/home/grybouilli/Documents/ossia/score/packages/testing-plugin" \
         -DCMAKE_PREFIX_PATH="/usr/lib/libtorch-cpu"

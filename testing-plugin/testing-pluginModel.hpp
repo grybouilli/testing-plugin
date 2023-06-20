@@ -18,7 +18,7 @@ namespace Example
         halp_meta(name, "Testing Plugin")
         halp_meta(category, "Audio")
         halp_meta(c_name, "testing_plugin")
-        halp_meta(uuid, "62004a80-ed0d-473a-84b5-b8d191a0a8b0")
+        halp_meta(uuid, "51624a8c-e91b-4cc8-aacf-c8d4e304fa91")
 
         // Inner model
         torch::jit::script::Module  model;
@@ -68,7 +68,7 @@ namespace Example
             // Initialization, this method will be called with buffer size, etc.
             // Load the model here
             module_loaded = false;
-            module_loaded = load_model("models/traced-lin-pred.pt");
+            module_loaded = load_model("/tmp/models/traced-lin-pred.pt");
         }
 
         // Do our processing for N samples
@@ -78,7 +78,7 @@ namespace Example
         void operator()(halp::tick t);
 
         // UI is defined in another file to keep things clear.
-        struct ui;
+        // struct ui;
     };
 
 }

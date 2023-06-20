@@ -4,15 +4,15 @@
 
 namespace Example
 {
-    struct testing_plugin::ui
-    {
-        using enum halp::colors;
-        using enum halp::layouts;
+    // struct testing_plugin::ui
+    // {
+    //     using enum halp::colors;
+    //     using enum halp::layouts;
 
-            halp_meta(name, "Main")
-            halp_meta(layout, vbox)
-            halp_meta(background, dark)
+    //         halp_meta(name, "Main")
+    //         halp_meta(layout, vbox)
+    //         halp_meta(background, dark)
 
-            halp::label title{"My First Processor"};
-    };
+    //         halp::label title{"My First Processor"};
+    // };
 }

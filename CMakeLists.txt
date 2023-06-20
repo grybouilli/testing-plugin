@@ -8,7 +8,8 @@ include(ScoreAvndHelper)
 
 project(score_addon_testing_plugin LANGUAGES CXX)
 
-configure_file("models/traced-lin-pred.pt" "build/models" COPYONLY)
+# configure_file("models/traced-lin-pred.pt" "${CMAKE_INSTALL_PREFIX}/models/traced-lin-pred.pt" COPYONLY)
+configure_file("models/traced-lin-pred.pt" "/tmp/models/traced-lin-pred.pt" COPYONLY)
 
 #find_package(Torch REQUIRED)
 
