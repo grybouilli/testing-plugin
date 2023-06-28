@@ -10,12 +10,7 @@ include(ScoreAvndHelper)
 
 project(score_addon_testing_plugin LANGUAGES CXX)
 
-# configure_file("models/traced-lin-pred.pt" "${CMAKE_INSTALL_PREFIX}/models/traced-lin-pred.pt" COPYONLY)
-# configure_file("models/traced-lin-pred.pt" "/tmp/models/traced-lin-pred.pt" COPYONLY)
-
-#find_package(Torch REQUIRED)
-
-#target_link_libraries(my_gain "${TORCH_LIBRARIES}")
+configure_file("models/traced-lin-pred.pt" "/tmp/models/traced-lin-pred.pt" COPYONLY)
 
 avnd_score_plugin_init(
   BASE_TARGET score_addon_testing_plugin
@@ -34,8 +29,8 @@ avnd_score_plugin_add(
   NAMESPACE Example
 )
 
-set(CMAKE_INSTALL_RPATH "/usr/lib/libtorch-cpu/lib")
-set(CMAKE_BUILD_RPATH "/usr/lib/libtorch-cpu/lib")
+set(CMAKE_INSTALL_RPATH "/usr/lib/libtorch")
+set(CMAKE_BUILD_RPATH "/usr/lib/libtorch")
 find_package(Torch REQUIRED)
 target_link_libraries(score_addon_testing_plugin PRIVATE "${TORCH_LIBRARIES}")
 
